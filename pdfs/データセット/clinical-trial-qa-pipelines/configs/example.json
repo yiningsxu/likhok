@@ -1,0 +1,30 @@
+{
+  "pipeline": "p5",
+  "seed": 42,
+  "debate_rounds": 1,
+  "clients": {
+    "primary": [
+      {
+        "provider": "openai_compatible",
+        "base_url": "https://api.example.org/v1",
+        "model": "primary-model-a",
+        "api_key_env": "CLINICAL_QA_API_KEY",
+        "timeout": 60
+      },
+      {
+        "provider": "openai_compatible",
+        "base_url": "https://api.example.org/v1",
+        "model": "primary-model-b",
+        "api_key_env": "CLINICAL_QA_API_KEY",
+        "timeout": 60
+      }
+    ],
+    "verifier": {
+      "provider": "openai_compatible",
+      "base_url": "https://api.example.org/v1",
+      "model": "verifier-model",
+      "api_key_env": "CLINICAL_QA_API_KEY",
+      "timeout": 60
+    }
+  }
+}

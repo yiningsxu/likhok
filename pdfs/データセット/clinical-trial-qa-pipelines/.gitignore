@@ -1,0 +1,8 @@
+upload/
+inputs/
+outputs/
+.env*
+*.csv
+__pycache__/
+.pytest_cache/
+.superpowers/
